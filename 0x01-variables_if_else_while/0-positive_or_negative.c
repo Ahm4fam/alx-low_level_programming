@@ -1,21 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/**
+/*
  * This is for project 0x01. C - Variables, if, else, while
  *
  * By Ahmed S. Endrie
  *
  */
 
-/*
- * main - print wheather the number is positive zero or negative
- * Description: using the function
- * this program program prints The number is positive zero or negative
+/**
+ * main - Entery point
  *
- * Return: no returns (Success)
+ * Return: Always 0 (Success)
  */
-void main(void)
+
+int main(void)
 {
 	int n;
 
@@ -36,5 +35,5 @@ void main(void)
 	{
 		printf("%i is negative\n", n);
 	}
-	/*return (0);*/
+	return (0);
 }
