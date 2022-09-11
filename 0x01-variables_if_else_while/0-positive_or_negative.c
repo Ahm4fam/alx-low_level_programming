@@ -13,10 +13,9 @@
  * Description: using the function
  * this program program prints The number is positive zero or negative
  *
- * Return: Always 0 (Success)
+ * Return: no returns (Success)
  */
-/* return 0 Success) */
-int main(void)
+void main(void)
 {
 	int n;
 
@@ -37,5 +36,5 @@ int main(void)
 	{
 		printf("%i is negative\n", n);
 	}
-	return (0);
+	/*return (0);*/
 }
