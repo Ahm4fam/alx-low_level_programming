@@ -20,7 +20,7 @@ int main(void)
 	int i;
 	int j;
 	int k;
-	int l = 48;
+	int l = 49;
 
 	for (i = 48; i <= 57; i++)
 	{
