@@ -20,25 +20,32 @@ int main(void)
 	int i;
 	int j;
 	int k;
-	int l = 49;
+	int l;
 
 	for (i = 48; i <= 57; i++)
 	{
-		for (j = 48; j <= 57; j++, l = j + 1)
+		for (j = 48; j <= 57; j++)
 		{
-			for (k = i; k <= 57; k++, l = 48)
+			for (k = 48; k <= 57; k++)
 			{
-				for (; l <= 57; l++)
+				for (l = 48; l <= 57; l++)
 				{
+					if (((k + l) > (i + j) &&  k >= i) || i < k)
+					{
 					putchar(i);
 					putchar(j);
 					putchar(' ');
 					putchar(k);
 					putchar(l);
-					if (i != 58)
+					if (i + j + k + l == 227 && i == 57)
+					{
+						break;
+					}
+					else
 					{
 						putchar(',');
 						putchar(' ');
+					}
 					}
 				}
 			}
