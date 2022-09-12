@@ -1,10 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
 
 /*
- * This is the solutin for task 9. prints all possible combinations
- * of single-digit numbers.
+ * This is the solutin for task 10. prints all possible different combinations
+ * of two digits.
  *
  * Auth: Ahmed S Endrie
  *
@@ -27,16 +26,11 @@ int main(void)
 		{
 			putchar(i);
 			putchar(j);
-			if (j != 57)
+			if (i != 56)
 			{
 				putchar(',');
 				putchar(' ');
 			}
-		}
-		if (i != 56)
-		{
-			putchar(',');
-			putchar(' ');
 		}
 	}
 	putchar('\n');
