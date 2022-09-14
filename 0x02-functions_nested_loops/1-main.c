@@ -2,15 +2,20 @@
 
 /**
  * print_alphabet - prints small alphabets
- * @ch: - argument charactor to be printed
  *
  * Description: Prints alphabet
  *
  * Return: 0 always (success)
  */
 
-int print_alphabet(char ch)
+int print_alphabet(void)
 {
-	putchar(ch);
+	char ch;
+
+	for (ch = 'a' ; ch <= 'z' ; ch++)
+	{
+		putchar(ch);
+	}
+	putchar('\n');
 	return (0);
 }
