@@ -2,7 +2,6 @@
 #define MAIN_H
 
 
-
-void _putchar(); 
-
+int _putchar(char);
+int print_alphabet(char);
 #endif /* MAIN_H */

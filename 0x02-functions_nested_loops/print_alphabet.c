@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 /**
- * _putchar - prints charactor
+ * print_alphabet - prints small alphabets
  * @ch: - argument charactor to be printed
  *
- * Description: Prints putchar
+ * Description: Prints alphabet
  *
  * Return: 0 always (success)
  */
-int _putchar(char ch)
+
+int print_alphabet(char ch)
 {
 	putchar(ch);
 	return (0);
