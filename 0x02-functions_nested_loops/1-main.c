@@ -1,21 +1,23 @@
 #include <stdio.h>
+#include "main.h"
 
-/**
- * print_alphabet - prints small alphabets
+/*
+ * This is the solutin for task 1. from project Functions, nested loops
  *
- * Description: Prints alphabet
+ * Auth: Ahmed S Endrie
  *
- * Return: 0 always (success)
  */
 
-int print_alphabet(void)
-{
-	char ch;
+/**
+ * main - Entry point
+ *
+ *
+ * Return: Always 0 (Success
+ *
+ */
 
-	for (ch = 'a' ; ch <= 'z' ; ch++)
-	{
-		putchar(ch);
-	}
-	putchar('\n');
+int main(void)
+{
+	print_alphabet();
 	return (0);
 }

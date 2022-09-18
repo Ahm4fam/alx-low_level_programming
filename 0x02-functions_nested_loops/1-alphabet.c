@@ -1,23 +1,20 @@
 #include <stdio.h>
-#include "main.h"
-
-/*
- * This is the solutin for task 1. from project Functions, nested loops
- *
- * Auth: Ahmed S Endrie
- *
- */
 
 /**
- * main - Entry point
+ * print_alphabet - prints small alphabets
  *
+ * Description: Prints alphabet
  *
- * Return: Always 0 (Success
- *
+ * Return: 0 always (success)
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char ch;
+
+	for (ch = 'a' ; ch <= 'z' ; ch++)
+	{
+		putchar(ch);
+	}
+	putchar('\n');
 }
