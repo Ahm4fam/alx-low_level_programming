@@ -1,8 +1,23 @@
 #include <stdio.h>
-#include <string.h>
+#include "main.h"
 
 /**
- * print_rev - prints the string in the reverse order
+ * swap - swap two char
+ * @a: first char
+ * @b: second char
+ * Return: void
+ */
+void swap(char *a, char *b)
+{
+	char tmp;
+
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
+}
+
+/**
+ * rev_string - prints the string in the reverse order
  * @s: given string
  *
  * Description: print the str
@@ -10,25 +25,21 @@
  * Return: 0 always (success)
  */
 
-
-void print_rev(char *s)
+void rev_string(char *s)
 {
-	int len, i;
-	char *start, *end, temp;
+	int i, j;
 
-	len = strlen(s);
-	start = s;
-	end = s;
-
-	for (i = 0; i < len - 1; i++)
-		end++;
-	for (i = 0; i < len / 2; i++)
+	i = 0;
+	while (*(s + i))
 	{
-		temp = *end;
-		*end = *start;
-		*start = temp;
-		start++;
-		end--;
+		i++;
 	}
-	puts(s);
+	i--;
+	j = 0;
+	while (i > j)
+	{
+		swap(s + i, s + j);
+		j++;
+		i--;
+	}
 }
