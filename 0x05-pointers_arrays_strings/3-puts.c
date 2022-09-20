@@ -6,10 +6,8 @@
  * @str: given string
  *
  * Description: print the str
- *
- * Return: 0 always (success)
+ * Return: void
  */
-
 
 void _puts(char *str)
 {
