@@ -34,7 +34,7 @@ char *_strncat(char *dest, char *src, int n)
 	int fs, ss;
 
 	ss = _strlen(dest);
-	fs = _strlen(src) - 1;
+	fs = _strlen(src)-1;
 	if (n < fs)
 		fs = n;
 
