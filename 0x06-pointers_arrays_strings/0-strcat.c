@@ -23,20 +23,18 @@ int _strlen(char *s)
  *
  * @dest: destination string
  * @src: source string
- * @n: number of byte
  *
  * Return: a pointer to the resulting string dest
  *
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
 	int fs, ss;
 
 	ss = _strlen(dest);
 	fs = _strlen(src) - 1;
-	if (n < fs)
-		fs = n;
+
 	while (fs >= 0)
 	{
 		*(dest + ss + fs) = *(src + fs);
@@ -44,5 +42,4 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	*(dest + _strlen(dest)) = '\0';
 	return (dest);
-
 }
