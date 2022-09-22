@@ -32,11 +32,11 @@ int _strlen(char *s)
 char *_strncat(char *dest, char *src, int n)
 {
 	int lsrc, ldst;
-	
+
 	ldst = _strlen(dest);
 	lsrc = _strlen(src) - 1;
 	if (n < lsrc)
-		lsrc = n-1;
+		lsrc = n - 1;
 	while (lsrc >= 0)
 	{
 		*(dest + ldst + lsrc) = *(src + lsrc);
