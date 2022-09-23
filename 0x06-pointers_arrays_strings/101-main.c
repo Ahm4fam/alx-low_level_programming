@@ -3,7 +3,7 @@
 
 /*
  * This is the solutin for project '0x06. C- More pointers, arrays and strings'
- * task 5
+ * task 9
  *
  * Auth: Ahmed S Endrie
  *
@@ -17,11 +17,15 @@
 
 int main(void)
 {
-	char str[] = "Look up!\n";
-	char *ptr;
-
-	ptr = string_toupper(str);
-	printf("%s", ptr);
-	printf("%s", str);
+	print_number(98);
+	_putchar('\n');
+	print_number(402);
+	_putchar('\n');
+	print_number(1024);
+	_putchar('\n');
+	print_number(0);
+	_putchar('\n');
+	print_number(-98);
+	_putchar('\n');
 	return (0);
 }
